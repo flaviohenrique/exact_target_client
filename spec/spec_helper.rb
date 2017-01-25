@@ -16,3 +16,7 @@ ExactTargetClient.cache = Redis.new
 ExactTargetClient.configure do |c|
   c.from_h(yaml_hash)
 end
+
+SimpleCov.start do
+  add_group 'lib', 'lib'
+end
