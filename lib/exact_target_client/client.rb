@@ -11,7 +11,6 @@ module ExactTargetClient
       tries = 0
       begin
         token = ExactTargetClient.cache.get('exact_target_api_token')
-
         @http.post(API_URL % params[:key], params[:data], 'Authorization' => "Bearer #{token}")
       rescue => e
         tries = tries.next

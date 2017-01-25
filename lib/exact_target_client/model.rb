@@ -5,10 +5,8 @@ module ExactTargetClient
     end
 
     def save(table_name, data, valid_data = true)
-      data = data.with_indifferent_access
-
       data = build_data(data, valid_data)
-
+      
       key = config.table_ids.to_h[table_name.to_sym]
 
       @client.post(key: key, data: data)

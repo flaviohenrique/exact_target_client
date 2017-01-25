@@ -5,7 +5,7 @@ RSpec.describe ExactTargetClient::Model do
   describe '#save' do
     subject(:do_save) { model.save(table_name, data, valid_data) }
 
-    let(:key) { '36C9226A-7406-4985-A316-719D0A3B8498' }
+    let(:key) { '3333333-3333-3333-3333-333333333333' }
 
     let(:token) { 'some_token' }
 
@@ -17,7 +17,7 @@ RSpec.describe ExactTargetClient::Model do
 
     it 'expect to call client with key on url' do
       url = 'https://www.exacttargetapis.com/hub/v1/dataevents/' \
-            'key:36C9226A-7406-4985-A316-719D0A3B8498/rowset'
+            'key:3333333-3333-3333-3333-333333333333/rowset'
 
       do_save
 

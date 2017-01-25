@@ -12,7 +12,7 @@ RSpec.describe ExactTargetClient::Authentication do
 
     context 'with client' do
       let(:auth_data) do
-        { clientId: '9nw953qsjhfns8r9kk2wwsxm', clientSecret: 'e696uPbzqx6SBu5kWTfhv6tR' }
+        { clientId: '99999999999999999999999', clientSecret: '888888888888888888888888' }
       end
 
       it 'expect to call with id and secret' do
